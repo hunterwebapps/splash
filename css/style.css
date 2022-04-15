@@ -42,7 +42,6 @@ a {
 }
 
 .project {
-  background-color: #141A46;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1rem;
@@ -53,8 +52,16 @@ a {
   transform: scale(1.01);
 }
 
+.project:active {
+  transform: scale(0.99);
+}
+
 project-card:last-of-type .project {
   margin-bottom: 0;
+}
+
+.bg-primary {
+  background-color: #141A46;
 }
 
 .box {
@@ -135,8 +142,4 @@ project-card:last-of-type .project {
   }
 }
 
-@media(min-width: 1200px) {
-  .title {
-    font-size: 2.5rem;
-  }
-}
+@media(min-width: 1200px) {}

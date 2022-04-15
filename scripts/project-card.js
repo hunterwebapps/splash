@@ -3,14 +3,19 @@ class ProjectCard extends HTMLElement {
     const position = this.attributes['image-position'];
     const { target, thumbnail, label } = this.attributes;
 
-    const style = `background: url('${thumbnail.value}') no-repeat; background-size: cover;`;
+    const styles = `
+      background: url('${thumbnail.value}') no-repeat;
+      background-size: cover;
+    `;
+
+    const boxClass = `box image-${position.value}`;
 
     this.innerHTML = `
       <a href="${target.value}">
         <section class="project">
-          <div class="box image-${position.value}" style="${style}">
+          <div class="${boxClass}" style="${styles}">
           </div>
-          <div class="box">
+          <div class="box bg-primary">
             <p class="title">
               ${label.value}
             </p>
