@@ -1,7 +1,6 @@
 {
   "name": "hunterwebapps-splash",
   "scripts": {
-    "build": "echo Done",
     "dev": "live-server"
   },
   "devDependencies": {
