@@ -7,6 +7,10 @@
   <meta name="description"
     content="Hunter Web Apps develops custom software solutions. We specialize in web technologies, utilizing Azure, .NET, and the latest UI frameworks." />
 
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="manifest" href="site.webmanifest">
+
   <title>Hunter Web Apps</title>
 
   <link rel="stylesheet" href="https://use.typekit.net/qbj8lbp.css">
@@ -21,44 +25,19 @@
 
     <img src="images/alt-mixed.svg" alt="Hunter Web Apps Logo" class="logo" />
 
-    <!-- Portfolio -->
-    <section class="project">
-      <div class="box image-left">
-        <a href="https://hunterwebapps.dev">
-          <img src="images/thumbnail1.webp" alt="Hunter Web Apps Portfolio" />
-        </a>
-      </div>
-      <div class="box">
-        <p class="title">
-          Portfolio
-        </p>
-      </div>
-    </section>
+    <project-card target="https://hunterwebapps.dev" thumbnail="images/software_engineering.webp"
+      label="Software Engineering" image-position="left"></project-card>
 
-    <!-- Blog -->
-    <section class="project">
-      <div class="box image-right">
-        <a href="https://hunterwebapps.blog">
-          <img src="images/thumbnail2.webp" alt="Hunter Web Apps Blog" />
-        </a>
-      </div>
-      <div class="box">
-        <p class="title">
-          Blog
-        </p>
-      </div>
-    </section>
+    <project-card target="https://hunterwebapps.blog" thumbnail="images/content_marketing.webp"
+      label="Content Marketing" image-position="right"></project-card>
 
     <footer class="copyright-text">
       &copy; <span id="current-year"></span> Hunter Web Apps
     </footer>
+
   </div>
 
-  <script>
-    const tm = document.getElementById('current-year');
-    tm.innerText = new Date().getFullYear();
-  </script>
-
+  <script src="scripts/index.js" type="module"></script>
 </body>
 
 </html>

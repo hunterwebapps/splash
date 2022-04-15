@@ -19,6 +19,11 @@ p, q {
   line-height: 1.8;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .logo {
   width: 90%;
   margin: 1rem 0;
@@ -31,7 +36,7 @@ p, q {
 }
 
 .title {
-  font-size: 2.35rem;
+  font-size: 1.5rem;
   color: #EC8B5E;
   font-family: coolvetica, Helvetica, Arial, sans-serif;
 }
@@ -41,9 +46,14 @@ p, q {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1rem;
+  transition: all ease 0.1s;
 }
 
-.project:last-of-type {
+.project:hover {
+  transform: scale(1.01);
+}
+
+project-card:last-of-type .project {
   margin-bottom: 0;
 }
 
@@ -92,14 +102,18 @@ p, q {
     max-width: 540px
   }
 
-  .project {
-    margin-bottom: 0;
+  .title {
+    font-size: 1.2rem;
   }
 }
 
 @media(min-width: 768px) {
   .container {
     max-width: 720px
+  }
+
+  .title {
+    font-size: 1.65rem;
   }
 }
 
@@ -108,13 +122,21 @@ p, q {
     margin: 2rem 0;
   }
 
+  .project {
+    margin-bottom: 2rem;
+  }
+
   .container {
     max-width: 960px
+  }
+
+  .title {
+    font-size: 2.1rem;
   }
 }
 
 @media(min-width: 1200px) {
-  .container {
-    max-width: 1200px
+  .title {
+    font-size: 2.5rem;
   }
 }
